@@ -1,0 +1,61 @@
+/* header part */
+h1{
+    color:lightseagreen;
+    font-weight: 700;
+}
+/* image */
+.im{
+    height: 700px;
+    width:700px;
+}
+/* calculation box */
+.box{
+    background-color:bisque;
+    height: 700px;
+}
+/* income & expenses input */
+h4{
+    margin-left: 20px;
+}
+.salary{
+    margin-left: 50px;
+}
+.rent{
+    margin-left: 20px;
+}
+.food{
+    margin-left: 15px;
+}
+.cloth{
+    margin-left: 11px;
+}
+/* calculate button */
+.button-cal{
+    color:white;
+    background-color: lightseagreen;
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 160px;
+    padding:5px 60px;
+}
+/* extra part  */
+.save{
+    width:150px;
+}
+.expense{
+    display:block;
+}
+/* button save */
+.button-save{
+    color:white;
+    background-color: lightseagreen;
+    font-weight: 700;
+    font-size: 20px;
+    padding:0px 40px;
+}
+/* footer */
+.foot{
+    height: 40px;
+    padding-top: 5px;
+    color:white;
+}

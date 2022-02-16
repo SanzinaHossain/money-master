@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/3f7322acf6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="mt-3">
+        <div>
+            <h1 class="text-center ">My Monthly Expenses<img src="images/bag.jpg"></h1>
+        </div>
+    </header>
+    <section class="container mt-4">
+       <div class="row gy-4">
+           <div class="col-lg-6 col-12">
+               <img class="img-fluid im" src="images/pic-1.jpg" alt="">
+           </div>
+           <div class="col-lg-6 col-12 box">
+                <h1 class="text-center mt-4">Income</h1>
+                <h4 class="d-inline">Salary:</h4>
+                <input class="w-50 salary"type="text" id="">
+                <h1 class="text-center mt-2">Expenses</h1>
+                <h4 class="d-inline ">Rent Exp:</h4>
+                <input class=" w-50 rent"type="text" id=""><br><br>
+                <h4 class="d-inline ">Food Exp:</h4>
+                <input class=" w-50 food"type="text" id=""><br><br>
+                <h4 class="d-inline">Cloth Exp:</h4>
+                <input class="w-50 cloth"type="text" id=""><br><br>
+                <button class="rounded-3 button-cal" type="submit">Calculate</button><br><br>
+                <h3 class="text-center expense">Total Expenses: $<span>1000</span></h3>
+                <h3 class="text-center expense">Balance: $<span>1000</span></h3><br>
+                <h4 class="d-inline ms-lg-5 ms-sm-1">Save:</h4>
+                <input class="save d-inline"type="text" id=""><span>  % </span>
+                <button class="rounded-3 button-save" type="submit">Save</button><br><br>
+                <h4 class="text-center expense">Saving Amount: $<span>1000</span></h4>
+                <h4 class="text-center expense">Remaining Balance: $<span>1000</span></h4><br>
+           </div>
+       </div>
+    </section>
+    <footer>
+        <div class="bg-dark foot">
+           <p class="text-center">Copyright @ 2022 influencer Work</p>
+        </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
