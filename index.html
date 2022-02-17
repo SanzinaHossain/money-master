@@ -33,7 +33,10 @@
                 <h4 class="d-inline">Cloth Exp:</h4>
                 <input class="w-50 cloth rounded"type="text" id="cloth-amount" required><br><br>
                 <button class="rounded-3 button-cal" type="submit" id="calculate-button">Calculate</button><br><br>
-
+                 <!-- error message -->
+                 <div class="error-handle" id="errorID">
+                     <p id="e-msg"> !!! Any expenses can't be greater than salary</p>
+                 </div><br>
                 <!-- expenses show -->
                 <h3 class="text-center expense">Total Expenses: $<span id="total-exp">0000</span></h3>
                 <h3 class="text-center expense">Balance: $<span id="balance-money">0000</span></h3><br>
@@ -42,8 +45,13 @@
                 <h4 class="d-inline ms-lg-5 ms-sm-1">Save:</h4>
                 <input class="save d-inline rounded"type="text" id="save-parcent"><span>  % </span>
                 <button class="rounded-3 button-save" type="submit" id="save-button">Save</button><br><br>
+                <!-- error-handle -->
+                <div class="error-handle" id="error-2-ID">
+                    <p id="e-2-msg"> !!! Any expenses can't be greater than salary</p>
+                </div><br>
                 <h4 class="text-center expense">Saving Amount: $<span id="saving-amount">0000</span></h4>
-                <h4 class="text-center expense">Remaining Balance: $<span id="remain-amount">0000</span></h4><br>
+                <h4 class="text-center expense">Remaining Balance: $<span id="remain-amount">0000</span></h4>
+                
            </div>
        </div>
     </section>

@@ -20,25 +20,30 @@ document.getElementById('calculate-button').addEventListener('click',function(){
         clothAmount.value='';
         salaryAmount.value='';
     }
-
+    const msgDiv=document.getElementById('errorID');
+    const msg=document.getElementById('e-msg');
     if(salary<=0 || rent<0 || food<0 || cloth<0)
     {
-        alert("Any input field can't be negative");
+        msgDiv.style.display='block';
+        msg.innerText='Any input field cant be negative !!!';
         emp();
     }
     else if(salaryAmount.value=="" || rentAmount.value==""|| foodAmount.value=="" || clothAmount.value=="")
     {
-        alert("Any input field can't be empty");
+        msgDiv.style.display='block';
+        msg.innerText="Any input field can't be empty !!!";
         emp();
     }
     else if(isNaN(salaryAmount.value) || isNaN(rentAmount.value) || isNaN(foodAmount.value) || isNaN(clothAmount.value))
     {
-        alert("Any input field can't be String");
+        msgDiv.style.display='block';
+        msg.innerText="Any input field can't be String !!!";
         emp();
     }
     else if(rent>salary || food>salary || cloth>salary)
     {
-        alert("Any expenses can't be greater than salary");
+        msgDiv.style.display='block';
+        msg.innerText="Any expenses can't be greater than salary !!!";
         emp();
     }
     else
@@ -48,6 +53,7 @@ document.getElementById('calculate-button').addEventListener('click',function(){
 
         if(totalExp<=salary)
         {
+            msgDiv.style.display='none';
             const balanceExp=document.getElementById('balance-money');
             const showExp=document.getElementById('total-exp');
             showExp.innerText=totalExp;
@@ -57,7 +63,8 @@ document.getElementById('calculate-button').addEventListener('click',function(){
         }
         else
         {
-            alert("Total expense greater than salary");
+            msgDiv.style.display='block';
+            msg.innerText="Total expense can't be greater than salary !!!";
             const balanceExp=document.getElementById('balance-money');
             const showExp=document.getElementById('total-exp');
             showExp.innerText="0000";
@@ -74,9 +81,15 @@ document.getElementById('calculate-button').addEventListener('click',function(){
 document.getElementById('save-button').addEventListener('click',function(){
     const saveParcent=document.getElementById('save-parcent');
     const amount=parseFloat(saveParcent.value);
+    // error-handle
+    const msgDiv=document.getElementById('error-2-ID');
+    const msg=document.getElementById('e-2-msg');
+
     if(amount<=0 || isNaN(saveParcent.value) || saveParcent.value=="")
     {
-          alert("Please give a valid input");
+        msgDiv.style.display='block';
+        msg.innerText="Please enter a valid input !!!";
+          //alert("Please give a valid input");
           saveParcent.value='';
     }
     else
@@ -85,11 +98,15 @@ document.getElementById('save-button').addEventListener('click',function(){
         const balance=parseFloat(balanceExp.innerText);
         if(balance<=0)
         {
-            alert("Balance is insufficient");
+            msgDiv.style.display='block';
+            msg.innerText="Balance is insufficient !!!";
+            //alert("Balance is insufficient");
             saveParcent.value='';
         }
         else
         {
+            
+            msgDiv.style.display='none';
             const saving =balance*(amount/100);
             const s=document.getElementById('saving-amount');
             s.innerText=saving;

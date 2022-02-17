@@ -5,13 +5,13 @@ h1{
 }
 /* image */
 .im{
-    height: 700px;
+    height: 750px;
     width:700px;
 }
 /* calculation box */
 .box{
     background-color:bisque;
-    height: 700px;
+    height: 750px;
 }
 /* income & expenses input */
 h4{
@@ -35,8 +35,21 @@ h4{
     background-color: lightseagreen;
     font-weight: 700;
     font-size: 20px;
-    margin-left: 160px;
+    margin-left: 140px;
     padding:5px 60px;
+}
+/* error handle */
+#errorID,#error-2-ID{
+    height:30px;
+    width:350px;
+    background-color:white;
+    margin-left: 30px;
+    display: none;
+}
+#e-msg,#e-2-msg{
+    color:red;
+    font-weight: 700;
+    padding-left: 10px;
 }
 /* extra part  */
 .save{
