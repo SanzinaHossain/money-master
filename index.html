@@ -10,17 +10,18 @@
     <script src="https://kit.fontawesome.com/3f7322acf6.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="mt-3">
+    <header class="mt-2">
         <div>
             <h1 class="text-center ">My Monthly Expenses<img src="images/bag.jpg"></h1>
         </div>
     </header>
-    <section class="container mt-4">
+    <section class="container mt-2">
        <div class="row gy-4">
            <div class="col-lg-6 col-12">
                <img class="img-fluid im" src="images/pic-1.jpg" alt="">
            </div>
            <div class="col-lg-6 col-12 box">
+               <!-- calculate salary & expense -->
                 <h1 class="text-center mt-4">Income</h1>
                 <h4 class="d-inline">Salary:</h4>
                 <input class="w-50 salary rounded"type="text" id="salary-amount" required>
@@ -32,13 +33,17 @@
                 <h4 class="d-inline">Cloth Exp:</h4>
                 <input class="w-50 cloth rounded"type="text" id="cloth-amount" required><br><br>
                 <button class="rounded-3 button-cal" type="submit" id="calculate-button">Calculate</button><br><br>
+
+                <!-- expenses show -->
                 <h3 class="text-center expense">Total Expenses: $<span id="total-exp">0000</span></h3>
                 <h3 class="text-center expense">Balance: $<span id="balance-money">0000</span></h3><br>
+
+                <!-- saving part -->
                 <h4 class="d-inline ms-lg-5 ms-sm-1">Save:</h4>
-                <input class="save d-inline rounded"type="text" id=""><span>  % </span>
-                <button class="rounded-3 button-save" type="submit">Save</button><br><br>
-                <h4 class="text-center expense">Saving Amount: $<span>0000</span></h4>
-                <h4 class="text-center expense">Remaining Balance: $<span>0000</span></h4><br>
+                <input class="save d-inline rounded"type="text" id="save-parcent"><span>  % </span>
+                <button class="rounded-3 button-save" type="submit" id="save-button">Save</button><br><br>
+                <h4 class="text-center expense">Saving Amount: $<span id="saving-amount">0000</span></h4>
+                <h4 class="text-center expense">Remaining Balance: $<span id="remain-amount">0000</span></h4><br>
            </div>
        </div>
     </section>

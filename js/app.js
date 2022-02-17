@@ -26,6 +26,11 @@ document.getElementById('calculate-button').addEventListener('click',function(){
         alert("Any input field can't be negative");
         emp();
     }
+    else if(salaryAmount.value=="" || rentAmount.value==""|| foodAmount.value=="" || clothAmount.value=="")
+    {
+        alert("Any input field can't be empty");
+        emp();
+    }
     else if(isNaN(salaryAmount.value) || isNaN(rentAmount.value) || isNaN(foodAmount.value) || isNaN(clothAmount.value))
     {
         alert("Any input field can't be String");
@@ -60,6 +65,22 @@ document.getElementById('calculate-button').addEventListener('click',function(){
             emp();
         }
 
+        
+    }
+})
+
+//save button 
+
+document.getElementById('save-button').addEventListener('click',function(){
+    const saveParcent=document.getElementById('save-parcent');
+    const amount=parseFloat(saveParcent.value);
+    if(amount<=0 || isNaN(saveParcent.value) || saveParcent.value=="")
+    {
+          alert("Please give a valid input");
+          saveParcent.value='';
+    }
+    else
+    {
         
     }
 })
