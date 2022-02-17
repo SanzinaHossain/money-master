@@ -81,6 +81,21 @@ document.getElementById('save-button').addEventListener('click',function(){
     }
     else
     {
-        
+        const balanceExp=document.getElementById('balance-money');
+        const balance=parseFloat(balanceExp.innerText);
+        if(balance<=0)
+        {
+            alert("Balance is insufficient");
+            saveParcent.value='';
+        }
+        else
+        {
+            const saving =balance*(amount/100);
+            const s=document.getElementById('saving-amount');
+            s.innerText=saving;
+            const remain=document.getElementById('remain-amount');
+            remain.innerText=balance-saving;
+            saveParcent.value='';
+        }
     }
 })
