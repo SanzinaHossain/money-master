@@ -5,13 +5,13 @@ h1{
 }
 /* image */
 .im{
-    height: 750px;
+    height: 780px;
     width:700px;
 }
 /* calculation box */
 .box{
     background-color:bisque;
-    height: 750px;
+    height: 780px;
 }
 /* income & expenses input */
 h4{
